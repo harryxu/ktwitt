@@ -51,23 +51,6 @@ body {
 	text-align: center;
 }
 
-body.lang-ar,
-body.lang-fa,
-body.lang-he,
-body.lang-hi,
-body.lang-km,
-body.lang-ko,
-body.lang-ja,
-body.lang-th,
-body.lang-zh {
-	font-size: 75%; /* Resets 1em to 12px, for internationalized K2s */
-}
-
-#page,
-body.smartposition #rollingarchives {
-}
-
-
 #page {
 	text-align: left;
 	margin: 1em auto;
@@ -438,13 +421,6 @@ h2, h2 a, h2 a:visited,
 h3, h3 a, h3 a:visited,
 h4, h4 a, h4 a:visited {
 	color: #444;
-}
-
-.entry-title, .entry-title a, .entry-title a:hover, .entry-title a:visited,
-h2, h2 a, h2 a:hover, h2 a:visited,
-h3, h3 a, h3 a:hover, h3 a:visited,
-h4, h4 a, h4 a:hover, h4 a:visited {
-	text-decoration: none;
 }
 
 .entry-meta {
