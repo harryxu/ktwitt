@@ -936,26 +936,16 @@ input[type=text]:focus, textarea:focus {
 
 #footer {
 	clear: both;
-	margin: 0 auto;
-	padding: 20px 0 40px;
+	margin: 20px 0 auto;
+    padding:8px 0;
 	text-align: center;
-	color: #777;
+    background: #FFFFFF;
 }
 
 #footer p {
 	line-height: 1.6em;
 }
 
-#footer a {
-	color: #888;
-	font-weight: bold;
-}
-
-#footer a:hover {
-	border: none;
-	text-decoration: none;
-	color: #000;
-}
 
 #footer .wp-version,
 #footer .k2-version {
@@ -975,11 +965,11 @@ a:hover, a:visited:hover {
 }
 
 h2 a:hover, h2 span a:hover {
-	color: #27d !important;
+	color: #2276BB !important;
 }
 
 a {
-	color: #27d;
+	color: #2276BB;
 	text-decoration: none;
 }
 
