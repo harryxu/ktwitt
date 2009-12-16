@@ -17,8 +17,7 @@
 		<?php else: ?>
 		<div id="current-content" class="hfeed">
 
-			<?php include(TEMPLATEPATH . '/app/display/theloop.php'); ?>
-
+            <?php locate_template( array('app/display/theloop.php'), true ); ?>
 		</div> <!-- #current-content -->
 
 		<div id="dynamic-content"></div>
