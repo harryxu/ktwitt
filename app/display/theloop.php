@@ -92,4 +92,3 @@
             k2_navigation('nav-below');
         } 
     ?>  
-	<?php /* Bottom Navigation */ k2_navigation('nav-below'); ?> 
