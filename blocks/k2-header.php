@@ -16,11 +16,13 @@ $list_args = k2_get_page_list_args(); // this function is pluggable
 
 ?>
 
+<div class="blogInfo">
 <?php echo "<$block class='blog-title'>"; ?>
 	<a href="<?php echo get_option('home'); ?>/" accesskey="1"><?php bloginfo('name'); ?></a>
 <?php echo "</$block>"; ?>
 
 <p class="description"><?php bloginfo('description'); ?></p>
+</div>
 
 <ul class="menu round">
 	<li class="<?php if ( is_front_page() && !is_paged() ): ?>current_page_item<?php else: ?>page_item<?php endif; ?> blogtab">
