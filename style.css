@@ -47,7 +47,7 @@ h4, h5, h6 {
 body {
 	font-size: 0.75em; /* Resets 1em to 10px */
 	color: #333333;
-	background: #8EC1DA;
+	background: #4B7691;
 	text-align: center;
 }
 
@@ -93,7 +93,7 @@ body.smartposition #rollingarchives {
 }
 
 .content {
-	padding: 0 20px 30px;
+    padding: 0 0 30px 20px;
     background-color:#FFFFFF;
     margin-top:36px;
 }
@@ -146,12 +146,12 @@ body.sidebars-none #primary {
 .secondary {
 	width: 200px;
 	float: left;
-	font-size: 1em;
 	line-height: 1.5em;
-	color: #666;
-	position: relative;
-	padding: 0 10px;
-	overflow: hidden;
+    background-color:#DDEEF6;
+    border-left:1px solid #C0DEED;
+	padding: 0 9px;
+    -moz-border-radius-topright:5px;
+    -webkit-border-top-right-radius:5px;
 }
 
 #sidebar-2 {
@@ -274,7 +274,7 @@ h2 {
 }
 
 .secondary h4 { /* Secondary H4 is sidebar headlines */
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: normal;
 	padding: 0;
 	display: block;
@@ -532,7 +532,7 @@ a.comment-reply-link:hover,
 #commentlist #respond a#cancel-comment-reply-link:hover,
 a#cancel-comment-reply-link:hover,
 .comment-edit a:hover {
-	background-color: #333;
+	background-color: #99BBEE;
 	color: #fff;
 	text-decoration: none;
 }

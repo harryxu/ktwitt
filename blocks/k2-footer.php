@@ -10,9 +10,10 @@
 ?>
 
 <?php
-    printf( _c('Powered by %1$s and %2$s|1:WordPress, 2:K2', 'k2_domain'),
+    printf( _c('Powered by %1$s Theme by %2$s and %3$s|1:WordPress, 2:K2', 'k2_domain'),
         '<a href="http://wordpress.org/">' . __('WordPress', 'k2_domain') . '</a>',
-        '<a href="http://getk2.com/" title="' . __('Loves you like a kitten.', 'k2_domain') . '">K2</a>'
+        '<a href="http://getk2.com/" title="' . __('Loves you like a kitten.', 'k2_domain') . '">K2</a>',
+        'KTwitt'
     );
 ?>
  | 
