@@ -45,8 +45,8 @@ h4, h5, h6 {
 /* Page Structure */
 
 body {
-	font-size: 62.5%; /* Resets 1em to 10px */
-	color: #444;
+	font-size: 0.75em; /* Resets 1em to 10px */
+	color: #333333;
 	background: #8EC1DA;
 	text-align: center;
 }
@@ -556,9 +556,6 @@ div.quoter_page_container {
 
 .entry-content {
 	font-size: 1.2em;
-	line-height: 1.8em;
-	text-align: justify;
-	color: #444;
 }
 
 .entry-content p,
