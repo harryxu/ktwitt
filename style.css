@@ -265,7 +265,7 @@ h2 {
 }
 
 .entry-title, h3 { /* H3 is entry headlines. H4 is comments and replyform headlines */
-	font-size: 2.4em;
+	font-size: 1.8em;
 	font-weight: normal;
 }
 
@@ -416,12 +416,6 @@ body.page .entry-content h4 {
 	display: inline;
 }
 
-.entry-title, .entry-title a, .entry-title a:visited,
-h2, h2 a, h2 a:visited,
-h3, h3 a, h3 a:visited,
-h4, h4 a, h4 a:visited {
-	color: #444;
-}
 
 .entry-meta {
 	font-size: 1em;
@@ -528,6 +522,7 @@ div.quoter_page_container {
 .hentry {
 	margin: 5px 0 15px;
 	position: relative;
+    border-bottom:1px solid #DDDDDD;
 }
 
 .entry-content {
