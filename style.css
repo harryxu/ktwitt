@@ -40,7 +40,7 @@ h4, h5, h6 {
 	font-family: Verdana, sans-serif;
 }
 
-.round{-moz-border-radius:5px;-webkit-border-radius:5px;}
+.round{border-radius:5px;--moz-border-radius:5px;-webkit-border-radius:5px;}
 
 /* Page Structure */
 
@@ -132,7 +132,8 @@ body.sidebars-none #primary {
 	line-height: 1.5em;
     background-color:#DDEEF6;
     border-left:1px solid #C0DEED;
-	padding: 0 9px;
+    padding: 0 9px;
+    border-top-right-radius: 5px;
     -moz-border-radius-topright:5px;
     -webkit-border-top-right-radius:5px;
 }
