@@ -40,7 +40,8 @@ h4, h5, h6 {
 	font-family: Verdana, sans-serif;
 }
 
-.round{border-radius:5px;--moz-border-radius:5px;-webkit-border-radius:5px;}
+.round{
+border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
 
 /* Page Structure */
 
