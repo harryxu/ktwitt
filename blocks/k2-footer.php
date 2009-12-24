@@ -16,10 +16,3 @@
         '<a href="http://github.com/harryxu/ktwitt" title="A twitter like wordpress theme base on k2" target="_blank">KTwitt</a>'
     );
 ?>
- | 
-<?php
-    printf( _c('%1$s and %2$s|1:Entries Feed, 2:Comments Feed','k2_domain'),
-        '<a href="' . get_bloginfo('rss2_url') . '">' . __('Entries Feed','k2_domain') . '</a>',
-        '<a href="' . get_bloginfo('comments_rss2_url') . '">' . __('Comments Feed','k2_domain') . '</a>'
-    );
-?>
