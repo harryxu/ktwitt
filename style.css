@@ -141,6 +141,8 @@ body.sidebars-none #primary {
 
 #sidebar-2 {
 	clear: right;
+    padding-bottom: 10px;
+    border-bottom:1px solid #C0DEED;
 }
 
 .comments {
@@ -1205,74 +1207,93 @@ img.wp-smiley {
 	display: none;
 }
 
-#search-form-wrap.livesearch {
-	position: relative;
-	height: 2.0em;
-}
-
 input[type=text], textarea {
-	color: #444;
-	padding: 1px;
-	margin: 0;
+    color: #444;
+    padding: 1px;
+    margin: 0;
+    }
+        
+#search-label { /* The 'Search for:' label */
+    display: none;
+    }
+        
+#search-label.overlabel-apply { /* Inline label for livesearch */
+    display: block;
+    position: absolute;
+    color: #888;
+    cursor: text;
+    padding: 4px 5px;
+    z-index: 1;
+    background: white;
+    }
+        
+#search-label.overlabel-apply.fade { /* Fade label when #s has focus */
+    color: #ccc;
+    }
+        
+#search-label.overlabel-apply.hide { /* Hide label when #s isn't empty */
+    text-indent: -1000px;
+    }
+        
+#s, #search-label.overlabel-apply { /* Style #s and label in same way */
+    font-size: 1.1em;
+    width: 190px;
+    line-height: 15px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    }
+        
+#s { /* The actual search input field */
+    position: relative;
+    padding: 3px;
+    width: 60%;
+    border: 1px solid #ddd;
+    background: transparent;
+    z-index: 2;
+    }
+        
+.livesearch #s { /* The search input field w. livesearch enabled */
+    padding-right: 20px;
+    width: 175px;
+    }
+        
+body.columns-three #search-label.overlabel-apply { /* For Three Columns */
+    width: 165px;
 }
 
-#s {
-	width: 85%;
-	font-size: 1.1em;
-	margin: 4px 0px;
+body.columns-three .livesearch #s { /* For Three Columns */
+    width: 150px;
 }
 
-.livesearch #s {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	margin: 0px;
+#s:focus {
+    border-color: #333;
 }
 
-.columns-three .livesearch #s {
-	width: 145px;
-}
+#searchreset, #searchload { /* Reset button & loading spinner */
+    position: absolute;
+    top: 2px;
+    opacity: 0;
+    right: 2px;
+    height: 18px;
+    width: 18px;
+    }
 
 #searchreset {
-	position: absolute;
-	right: 0px;
-	height: 19px;
-	width: 16px;
-	background: url('images/reset-fff.png') center center no-repeat;
+    z-index: 4;
+    background: url('../k2/images/reset-fff.png') center center no-repeat;
 }
 
 #searchload {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 18px;
-	width: 18px;
-	background: url('images/spinner.gif') center center no-repeat;
+    z-index: 3;
+    background: url('../k2/images/spinner.gif') center center no-repeat;
 }
 
-.livesearchform input[type=submit] {
-	margin: 0;
+#searchsubmit { /* Static search button */
+    float: right;
+    width: 30%;
 }
 
-#searchcontrols {
-	text-align: center;
-	padding: 1px;
-	background: #ddd;
-}
-
-#searchcontrols small {
-	margin: 0;
-	padding: 0;
-}
-
-label.overlabel-apply {
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	z-index: 1;
-	color: #999;
-	cursor: text;
-}
 
 
 /* Attachment */
