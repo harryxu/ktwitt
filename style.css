@@ -141,6 +141,8 @@ body.sidebars-none #primary {
 
 #sidebar-2 {
 	clear: right;
+    padding-bottom: 10px;
+    border-bottom:1px solid #C0DEED;
 }
 
 .comments {
