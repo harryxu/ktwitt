@@ -10,10 +10,6 @@
 
 // For SEO, outputs the blog title in h1 or a div
 $block = ( is_front_page() ? 'h1' : 'div' );
-
-// arguments for wp_list_pages
-$list_args = k2_get_page_list_args(); // this function is pluggable
-
 ?>
 
 <div class="blogInfo">
@@ -24,23 +20,7 @@ $list_args = k2_get_page_list_args(); // this function is pluggable
 <p class="description"><?php bloginfo('description'); ?></p>
 </div>
 
-<ul class="menu round">
-	<li class="<?php if ( is_front_page() && !is_paged() ): ?>current_page_item<?php else: ?>page_item<?php endif; ?> blogtab">
-		<a href="<?php echo get_option('home'); ?>/" title="<?php echo attribute_escape( get_option('k2blogornoblog') ); ?>">
-			<?php echo get_option('k2blogornoblog'); ?>
-		</a>
-	</li>
-
-	<?php /* K2 Hook - do not remove */ do_action('template_header_menu'); ?>
-
-	<?php
-		// List pages
-		wp_list_pages( $list_args );
-	?>
-
-	<?php
-		// Display an Register tab if registration is enabled or an Admin tab if user is logged in
-		wp_register('<li class="admintab">','</li>');
-	?>
-</ul><!-- .menu -->
-
+<?php
+	// Display the page tabs
+	wp_page_menu( array( 'show_home' => esc_attr( get_option('k2blogornoblog') ), 'depth' => 3 ) );
+?>
