@@ -154,23 +154,23 @@ body.sidebars-none #primary {
 
 /* Main Menu in Header */
 
-ul.menu {
+div.menu {
     background:#FFFFFF;
     white-space:nowrap;
 }
 
-ul.menu {
+div.menu {
     display: inline-block;
     padding:0 0.7em;
 }
 
-ul.menu li {
+div.menu li {
 	list-style: none;
 	margin-right: 4px;
     display: inline;
 }
 
-ul.menu li a {
+div.menu li a {
     border:1px solid transparent;
 	font-size: 1.05em;
     display: inline-block;
@@ -178,12 +178,12 @@ ul.menu li a {
 }
 
 
-ul.menu li.current_page_item a,
-ul.menu li.current_page_item a:hover,
-ul.menu li.current_page_ancestor a,
-ul.menu li.current_page_ancestor a:hover,
-body.single ul.menu li.blogtab a,
-body.single ul.menu li.blogtab a:hover {
+div.menu li.current_page_item a,
+div.menu li.current_page_item a:hover,
+div.menu li.current_page_ancestor a,
+div.menu li.current_page_ancestor a:hover,
+body.single div.menu li.blogtab a,
+body.single div.menu li.blogtab a:hover {
 	color: #333;
 	background: white;
 	text-decoration: none;

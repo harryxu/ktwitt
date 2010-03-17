@@ -22,5 +22,5 @@ $block = ( is_front_page() ? 'h1' : 'div' );
 
 <?php
 	// Display the page tabs
-	wp_page_menu( array( 'show_home' => esc_attr( get_option('k2blogornoblog') ), 'depth' => 3 ) );
+	wp_page_menu( array( 'show_home' => esc_attr( get_option('k2blogornoblog') ), 'depth' => 3, 'menu_class'  => 'menu round', ) );
 ?>
