@@ -7,10 +7,24 @@ Author URI: http://blog.harrspy.com
 Template: k2
 */
 
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Neuton'), url('http://themes.googleusercontent.com/font?kit=lk52V54bhycgaFbSZZyYiA') format('truetype');
+}
+
+@font-face {
+  font-family: 'Molengo';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Molengo'), url('http://themes.googleusercontent.com/font?kit=txVk61PTIsDrQQj2fK-76Q') format('truetype');
+}
 
 body {
   font-size: 75% !important;
   background: #1A1A1A !important;
+  font-family:'Neuton', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, Arial, sans-serif !important;
 }
 
 .entry-content {
@@ -22,4 +36,12 @@ body {
 }
 #page {
   padding-top:0px !important;
+}
+
+.post p {
+  overflow: visible !important;
+}
+
+h1, #site-title, h2, h3 {
+  font-family: 'Molengo', 'Trebuchet MS', Verdana, sans-serif !important;
 }
